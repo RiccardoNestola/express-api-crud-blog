@@ -1,6 +1,7 @@
 /* const posts = require("../db/db.json"); */
 const fs = require("fs");
 const path = require("path");
+const { kebabCase } = require("lodash");
 
 
 
@@ -63,6 +64,7 @@ function show(req, res) {
       /*      res.type("html").send(htmlContent); */
       const imgLink = (`http://${req.headers.host}/imgs/posts/${post.image}`)
       const downloadLink = (`http://${req.headers.host}/posts/${post.slug}/download`)
+      const newPost = (`http://${req.headers.host}/posts/create`)
 
       let htmlOutput =
         `<div class="p-2">
@@ -72,6 +74,7 @@ function show(req, res) {
           <p># ${post.tags.join(', ')}</p>
           <a href="${imgLink}" class="button">Apri immagine</a>
           <a href="${downloadLink}" class="button">Scarica immagine</a>
+          <a href="${newPost}" class="button">Crea Nuovo Post</a>
         </div>`
               
 
@@ -81,33 +84,71 @@ function show(req, res) {
 
     },
     'application/json': function () {
-      res.json(post);
+
+      const imgLink = (`http://${req.headers.host}/imgs/posts/${post.image}`)
+      const downloadLink = (`http://${req.headers.host}/posts/${post.slug}/download`)
+      
+      res.json({
+        ...post,
+        image_url: `${imgLink}`,
+        download_link: `${downloadLink}`,
+      });
     },
     'default': function () {
-      res.status(406).send('Not Acceptable');
+      res.status(406).send('non autorizzato');
     }
   });
 }
 
 
-function store(rea, res) {
-  console.log(req.body);
-  console.log(req.file);
-}
-
 
 function create(req, res) {
   res.format({
     html: () => {
-      html = "<h1>Crea Nuovo Post</h1>"
+      html = "<h1>Creazione nuovo post</h1>"
       res.send(html);
     },
     default: () => {
-      res.status(406).send("Not Acceptable");
+      res.status(406).send("non autorizzato");
+    }
+  })
+};
+
+
+function store(req, res) {
+
+  console.log(req.body);
+  console.log(req.file);
+
+  const posts = JSON.parse(fs.readFileSync(path.resolve("./db/db.json"), "utf8"));
+
+  res.format({
+    html: () => {
+      res.redirect("/");
+    },
+    default: () => {
+      // aggiungo il post al DB
+      posts.push({
+        ...req.body,
+        slug: kebabCase(req.body.title),
+        updatedAt: new Date().toISOString(),
+        image: req.file
+      });
+
+      // converto il DB in JSON
+      const json = JSON.stringify(posts, null, 2);
+
+      // scrivo il JSON su file
+      fs.writeFileSync(path.resolve(__dirname, "..", "db", "db.json"), json)
+
+      res.json(posts[posts.length - 1]);
     }
   })
 
-}
+};
+
+
+
 
 
 

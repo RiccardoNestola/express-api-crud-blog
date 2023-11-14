@@ -10,6 +10,8 @@ nella funzione store permettere di passare i dati nel formato multipart / form -
 permettere di eseguire l’upload dell’immagine principale del post. */
 
 
+
+
 const express = require("express");
 const dotenv = require("dotenv");
 const homeController = require("./controllers/home");
@@ -35,11 +37,6 @@ app.get("/about", homeController.about);
 app.get("/contatti", homeController.contacts);
 
 app.use("/posts", postsRouter)
-
-
-/* app.post("/", (req, res) => {
-  console.log(req.body);
-}); */
 
 
 // Avviamo il server

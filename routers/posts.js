@@ -13,6 +13,9 @@ router.get("/create", postsController.create);
 // show
 router.get("/:slug", postsController.show);
 
+//upload single image
+router.post("/", multer({ dest: "public/imgs/posts" }).single("image"), postsController.store);
+
 // download
 router.get('/:slug/download', postsController.download);
 

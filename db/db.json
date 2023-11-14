@@ -4,28 +4,45 @@
     "slug": "ciambellone",
     "content": "Sarà che una volta le cose erano più semplici, ma erano anche molto buone. Come le crostate, i biscotti o il ciambellone che la nonna preparava anche all'ultimo sapendo che sareste passati per la merenda: uova, zucchero e farina. Niente di più basic ma che tra le sue mani, mescolando e infornando, diventava una delle prelibatezze per accompagnare il succo di frutta al pomeriggio o il latte e caffè al mattino. Ecco la nostra ricetta del ciambellone a quale atmosfera si ispira, quella di casa e genuinità: con una manciata di scorze di limone o di arancia e una spolverata di zucchero a velo renderete questa soffice delizia profumata e invitante. E per una volta sarà la nonna a farvi i complimenti per aver preparato un morbido ciambellone, così buono che non passa mai di moda!",
     "image": "ciambellone.jpeg",
-    "tags": ["Dolci", "Torte", "Ricette vegetariane", "Ricette al forno"]
+    "tags": [
+      "Dolci",
+      "Torte",
+      "Ricette vegetariane",
+      "Ricette al forno"
+    ]
   },
   {
     "title": "Cracker alla barbabietola",
     "slug": "cracker-alla-barbabeitola",
     "content": "I cracker alla barbabietola sono uno snack stuzzicante e originale da preparare in casa utilizzando ingredienti semplici e genuini. Queste sfogliette dal colore brillante non passeranno inosservate nel vostro cestino del pane e arricchiranno la tavola con il loro gusto unico e accattivante. I cracker fatti a mano sono anche un gustoso snack spezza fame, da portare in ufficio o a scuola. Venite a scoprire il nostro mix di semi e cereali per realizzare l'impasto e divertitevi a sperimentare nuove ricette di cracker variando i semi, le farine e le spezie per gusti sempre nuovi, ecco qualche idea:\n              Cracker di farro\n              Cracker di lupini\n              Cracker allo zafferano\n              Cracker ai semi",
     "image": "cracker_barbabietola.jpeg",
-    "tags": ["Antipasti", "Ricette vegetariane", "Ricette al forno"]
+    "tags": [
+      "Antipasti",
+      "Ricette vegetariane",
+      "Ricette al forno"
+    ]
   },
   {
     "title": "Pasta barbabietola e gorgonzola",
     "slug": "pasta-barbabietola-e-gorgonzola",
     "content": "La nostra ricetta della pasta barbabietola e gorgonzola vuole ricreare in questo primo piatto un abbinamento appetitoso, già proposto con la torta salata alla barbabietola! Per un pranzo veloce ma gustoso, per chi ama giocare con consistenze e colori naturali in cucina, questa pasta è perfetta! La dolcezza della barbabietola smorza il gusto deciso che caratterizza questo formaggio erborinato molto amato, un'abbinata vincente e molto gustosa. Provate un nuovo condimento per la vostra pasta e sperimentate altre sfiziose varianti:\n            Pasta con barbabietola e pecorino\n            Gnocchi di barbabietola\n            Tagliatelle alla barbabietola con asparagi",
     "image": "pasta_barbabietola.jpeg",
-    "tags": ["Primi piatti", "Ricette vegetariane"]
+    "tags": [
+      "Primi piatti",
+      "Ricette vegetariane"
+    ]
   },
   {
     "title": "Pane fritto dolce",
     "slug": "pane-fritto-dolce",
     "content": "Il pane fritto dolce è la versione più antica dell’odierno french toast! Una deliziosa ricetta antispreco che le nonne preparavano ai bambini per merenda, utilizzando gli ingredienti che si avevano sempre a disposizione in casa: pane raffermo, uova, latte e zucchero, che noi abbiamo deciso di aromatizzare con un pizzico di cannella. Facile e veloce da realizzare, il pane fritto dolce vi riporterà con la mente ai sapori dell’infanzia… gustatelo da solo o accompagnatelo con frutta fresca e yogurt per uno spuntino tanto goloso quanto genuino!",
     "image": "pane_fritto_dolce.jpeg",
-    "tags": ["Dolci", "Dolci veloci", "Ricette veloci", "Ricette vegetariane"]
+    "tags": [
+      "Dolci",
+      "Dolci veloci",
+      "Ricette veloci",
+      "Ricette vegetariane"
+    ]
   },
   {
     "title": "Torta paesana",
@@ -39,5 +56,113 @@
       "Ricette vegetariane",
       "Ricette al forno"
     ]
+  },
+  {
+    "title": "pasta al ragu",
+    "slug": "pasta-al-ragu",
+    "content": "come fare la pasta al ragu",
+    "updatedAt": "2023-11-14T16:42:05.609Z"
+  },
+  {
+    "title": "pasta al ragu",
+    "slug": "pasta-al-ragu",
+    "content": "come fare la pasta al ragu",
+    "updatedAt": "2023-11-14T16:47:53.758Z"
+  },
+  {
+    "title": "pasta al ragu",
+    "slug": "pasta-al-ragu",
+    "content": "come fare la pasta al ragu",
+    "updatedAt": "2023-11-14T16:49:00.894Z"
+  },
+  {
+    "slug": "",
+    "updatedAt": "2023-11-14T16:49:55.835Z",
+    "image": {
+      "fieldname": "image",
+      "originalname": "Screenshot 2023-11-14 alle 09.51.42.png",
+      "encoding": "7bit",
+      "mimetype": "image/png",
+      "destination": "public/imgs/posts",
+      "filename": "7b10cedcb01a8db527ed96da0b2c23b0",
+      "path": "public/imgs/posts/7b10cedcb01a8db527ed96da0b2c23b0",
+      "size": 1426022
+    }
+  },
+  {
+    "slug": "",
+    "updatedAt": "2023-11-14T16:51:50.401Z",
+    "image": {
+      "fieldname": "image",
+      "originalname": "Screenshot 2023-11-14 alle 09.51.42.png",
+      "encoding": "7bit",
+      "mimetype": "image/png",
+      "destination": "public/imgs/posts",
+      "filename": "a2eef72134cdeede7cb63bc3365865f9",
+      "path": "public/imgs/posts/a2eef72134cdeede7cb63bc3365865f9",
+      "size": 1426022
+    }
+  },
+  {
+    "title": "pasta al ragu",
+    "slug": "pasta-al-ragu",
+    "content": "come fare la pasta al ragu",
+    "updatedAt": "2023-11-14T16:52:24.295Z"
+  },
+  {
+    "slug": "",
+    "updatedAt": "2023-11-14T16:53:00.043Z",
+    "image": {
+      "fieldname": "image",
+      "originalname": "Screenshot 2023-11-14 alle 17.52.46.png",
+      "encoding": "7bit",
+      "mimetype": "image/png",
+      "destination": "public/imgs/posts",
+      "filename": "bf92ae0f525e302857c915504eef10c9",
+      "path": "public/imgs/posts/bf92ae0f525e302857c915504eef10c9",
+      "size": 2764387
+    }
+  },
+  {
+    "slug": "",
+    "updatedAt": "2023-11-14T16:54:05.442Z",
+    "image": {
+      "fieldname": "image",
+      "originalname": "Screenshot 2023-11-14 alle 17.52.46.png",
+      "encoding": "7bit",
+      "mimetype": "image/png",
+      "destination": "public/imgs/posts",
+      "filename": "9a9f8be8223fc065976095ea2ee65ea6",
+      "path": "public/imgs/posts/9a9f8be8223fc065976095ea2ee65ea6",
+      "size": 2764387
+    }
+  },
+  {
+    "slug": "",
+    "updatedAt": "2023-11-14T17:14:57.432Z",
+    "image": {
+      "fieldname": "image",
+      "originalname": "Screenshot 2023-11-14 alle 17.52.46.png",
+      "encoding": "7bit",
+      "mimetype": "image/png",
+      "destination": "public/imgs/posts",
+      "filename": "84418b759e9693fc598603da32b0e289",
+      "path": "public/imgs/posts/84418b759e9693fc598603da32b0e289",
+      "size": 2764387
+    }
+  },
+  {
+    "slug": "",
+    "updatedAt": "2023-11-14T17:15:06.898Z",
+    "image": {
+      "fieldname": "image",
+      "originalname": "Screenshot 2023-11-14 alle 17.52.46.png",
+      "encoding": "7bit",
+      "mimetype": "image/png",
+      "destination": "public/imgs/posts",
+      "filename": "01493b05a2cff1c4139261666ccba770",
+      "path": "public/imgs/posts/01493b05a2cff1c4139261666ccba770",
+      "size": 2764387
+    }
   }
 ]
