@@ -1,16 +1,23 @@
-const posts = require("../db/db");
+/* const posts = require("../db/db.json"); */
 const fs = require("fs");
 const path = require("path");
 
 
 
 function index(req, res) {
+
+  const posts = JSON.parse(fs.readFileSync(path.resolve("./db/db.json"), "utf8"));
+
+
   res.format({
     'text/html': function () {
       let htmlContent = fs.readFileSync(path.resolve(__dirname, "../pages/posts.html"), "utf-8");
       let headContent = fs.readFileSync(path.resolve(__dirname, "../head.html"), "utf-8");
       htmlContent = htmlContent.replace("@head", headContent);
       /*      res.type("html").send(htmlContent); */
+
+
+
 
       let htmlOutput = posts.map(post => {
         return `
@@ -83,6 +90,12 @@ function show(req, res) {
 }
 
 
+function store(rea, res) {
+  console.log(req.body);
+  console.log(req.file);
+}
+
+
 function create(req, res) {
   res.format({
     html: () => {
@@ -95,6 +108,7 @@ function create(req, res) {
   })
 
 }
+
 
 
 function download(req, res) {
@@ -118,7 +132,7 @@ function findOrFail(req, res) {
 
   const postsSlug = req.params.slug;
 
-  const post = posts.find((post) => post.slug == postsSlug);
+  const post = JSON.parse(fs.readFileSync(path.resolve("./db/db.json"), "utf8")).find((post) => post.slug == postsSlug);
 
   if (!post) {
     res.status(404).send(`Post ${postsSlug} non trovato`);
@@ -134,6 +148,7 @@ module.exports = {
   index,
   show,
   create,
+  store,
   download
 
 }
